@@ -1,56 +1,14 @@
 fileFormatVersion: 2
-guid: 51d7246df6a45324ab6da5aa0b085413
+guid: 6ae6b0937cb21484b9a4cb6815cf47ac
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cube
-    100002: Cube_001
-    100004: Cylinder
-    100006: //RootNode
-    100008: Sphere_001
-    100010: Vert
-    100012: Plane
-    400000: Cube
-    400002: Cube_001
-    400004: Cylinder
-    400006: //RootNode
-    400008: Sphere_001
-    400010: Vert
-    400012: Plane
-    2100000: Hair
-    2100002: skin
-    2100004: eraser
-    2100006: pencil
-    2100008: wood
-    2100010: Material
-    2100012: duck
-    2100014: beak
-    2100016: plastic
-    2100018: cartridge
-    2100020: Nose
-    2100022: Cat
-    2100024: Whisker
-    2300000: Cube
-    2300002: Cube_001
-    2300004: Cylinder
-    2300006: Sphere_001
-    2300008: Vert
-    2300010: Plane
-    3300000: Cube
-    3300002: Cube_001
-    3300004: Cylinder
-    3300006: Sphere_001
-    3300008: Vert
-    3300010: Plane
-    4300000: Sphere_001
-    4300002: Cylinder
-    4300004: Vert
-    4300006: Cube_001
-    4300008: Cube
-    4300010: Plane
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    100000: //RootNode
+    400000: //RootNode
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: segaCollider
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -104,7 +62,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -131,7 +89,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
