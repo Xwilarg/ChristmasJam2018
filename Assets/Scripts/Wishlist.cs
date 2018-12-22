@@ -29,17 +29,7 @@ public class Wishlist : MonoBehaviour
 
     private void Start()
     {
-        List<int> wishesId = new List<int>();
-        int nbWishes = Random.Range(listSizeMin, listSizeMax);
-        for (int i = 0; i < nbWishes; )
-        {
-            int id = Random.Range(0, wishes.Length - 1);
-            if (!wishesId.Contains(id))
-            {
-                wishesId.Add(id);
-                i++;
-            }
-        }
+        List<int> wishesId = Utils.GetItems(wishes.Length, listSizeMin, listSizeMax);
         string finalText = "";
         int y = 1;
         foreach (int i in wishesId)
