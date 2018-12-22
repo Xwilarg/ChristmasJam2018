@@ -1,18 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CreateGift : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private GameObject packedGift;
 
-    // Update is called once per frame
-    void Update()
+    public void OnTriggerEnter(Collider other)
     {
-        
+        GiftObject gift = other.GetComponent<GiftObject>();
+        if (gift != null)
+        {
+            GameObject go = Instantiate(packedGift, new Vector3(transform.parent.position.x, transform.parent.position.y + 2f), Quaternion.identity);
+            go.AddComponent<GiftObject>().Obj = gift.Obj;
+            go.transform.rotation = Quaternion.Euler(new Vector3(90f, 0f, 0f));
+            Destroy(other.gameObject);
+            Destroy(transform.parent.gameObject);
+        }
     }
 }
