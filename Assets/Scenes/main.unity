@@ -225,6 +225,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.022573035, y: 0.021248119, z: 0.016733335}
   m_Center: {x: -0.0010130368, y: -0.00004564381, z: 0.054712567}
+--- !u!1 &376828259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 376828260}
+  - component: {fileID: 376828261}
+  m_Layer: 0
+  m_Name: Inside Detector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &376828260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376828259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188799861}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &376828261
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376828259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01, z: 0.0068080416}
+  m_Center: {x: -5.4366006e-24, y: 7.193095e-17, z: 0.006540246}
 --- !u!1 &446446682 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7439412362298718941, guid: 17a328a78a237d043af6f330530f3777,
@@ -992,6 +1036,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1188799861 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8752876331658426625, guid: e17269de42377e948938d303ed004001,
+    type: 3}
+  m_PrefabInstance: {fileID: 1719234638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1405412933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1146,6 +1196,11 @@ PrefabInstance:
     - target: {fileID: 8752876331658426625, guid: e17269de42377e948938d303ed004001,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262597024186618016, guid: e17269de42377e948938d303ed004001,
+        type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
