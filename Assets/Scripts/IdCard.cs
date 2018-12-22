@@ -1,65 +1,12 @@
 ﻿using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using static Utils;
 
 public class IdCard : MonoBehaviour
 {
     [SerializeField]
     private Text idText;
-
-    public struct Name
-    {
-        public Name(string firstName, bool isBoy)
-        {
-            FirstName = firstName;
-            IsBoy = isBoy;
-        }
-
-        public string FirstName;
-        public bool IsBoy;
-    }
-
-    private Name[] frenchNames = new Name[]
-    {
-        new Name("Carole", false),
-        new Name("Jean", true),
-        new Name("Léo", true),
-        new Name("Louis", true),
-        new Name("Nathan", true),
-        new Name("Henri", true),
-        new Name("Thierry", true),
-        new Name("Charles", true),
-        new Name("Cloé", false),
-        new Name("Jeanne", false),
-        new Name("Jean-Pierre", false),
-        new Name("Suzette", true)
-    };
-
-    private Name[] englishNames = new Name[]
-    {
-        new Name("Isabella", false),
-        new Name("Noah", true),
-        new Name("Ethan", true),
-        new Name("Shirley", false),
-        new Name("Ricky", true),
-        new Name("Emma", false),
-        new Name("Mike", true),
-        new Name("Kate", false)
-    };
-
-    private Name[] japaneseName = new Name[]
-    {
-        new Name("Hanako", false),
-        new Name("Yamato", true),
-        new Name("Haruna", false),
-        new Name("Tsukiko", false),
-        new Name("Rikka", false),
-        new Name("Hibiki", false),
-        new Name("Konagi", false),
-        new Name("Haruto", true),
-        new Name("Reo", true),
-        new Name("Rin", false)
-    };
 
     private string[] englishFilms = new string[]
     {
@@ -120,8 +67,6 @@ public class IdCard : MonoBehaviour
     public void Start()
     {
         Name name = englishNames[Random.Range(0, englishNames.Length - 1)];
-        string lastName = Utils.GenerateEuropeanLastName();
-        lastName = char.ToUpper(Utils.GenerateEuropeanLastName()[0]) + string.Join("", lastName.Skip(1));
         string movie = englishFilms[Random.Range(0, englishFilms.Length - 1)];
         string like = likes[Random.Range(0, likes.Length)];
         string dislike;
@@ -130,7 +75,7 @@ public class IdCard : MonoBehaviour
             dislike = likes[Random.Range(0, likes.Length)];
         } while (like == dislike);
         idText.text = "<b>First Name:</b> " + name.FirstName + System.Environment.NewLine
-            + "<b>Last Name:</b> " + lastName + System.Environment.NewLine
+            + "<b>Last Name:</b> " + GenerateEuropeanLastName() + System.Environment.NewLine
             + "<b>Sexe:</b> " + ((name.IsBoy) ? ("Boy") : ("Girl")) + System.Environment.NewLine
             + "<b>Age:</b> " + Random.Range(8, 15) + System.Environment.NewLine
             + "<b>Like:</b> " + like + System.Environment.NewLine
