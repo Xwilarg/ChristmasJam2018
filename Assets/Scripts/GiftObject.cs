@@ -4,19 +4,17 @@ public class GiftObject : MonoBehaviour
 {
     public enum GObject
     {
-        Coal,
+        Coal = -1,
         SegaNeptune,
         PlasticDuck,
-        WhitePencil,
         SubmachineGun,
+        WhitePencil,
         LittleSister,
         VeryBigCat,
-        MassiveDong,
         Friends,
         HentaiHeaven,
         AppleJuice,
         HumanSizeCockroach,
-        MeetingLeandre,
         LesMiserables,
         YellowVest,
         Dakimakura

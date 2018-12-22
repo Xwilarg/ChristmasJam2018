@@ -9,6 +9,7 @@ TagManager:
   - WorldSelection
   - Score
   - Dest
+  - WishList
   layers:
   - Default
   - TransparentFX

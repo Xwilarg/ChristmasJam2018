@@ -626,6 +626,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502074145}
   m_CullTransparentMesh: 0
+--- !u!1 &679714035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 132870, guid: 27fe6d2a15a377f4587f716a2d37ca8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 733292502}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &679714036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679714035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26127b50c753cc84591b027042bc925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rot: {x: 20, y: 10, z: 0}
+  speed: 0.01
 --- !u!1001 &733292502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -683,9 +703,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11491094, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
       propertyPath: speed
-      value: 0.5
+      value: 0.01
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11491094, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
+      propertyPath: rot.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491094, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
+      propertyPath: rot.y
+      value: 20
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11491094, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
 --- !u!1 &767685810
 GameObject:
