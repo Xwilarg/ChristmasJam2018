@@ -3,6 +3,10 @@
 public class DragGift : MonoBehaviour
 {
     private bool followMouse;
+    private Vector3 lastPos;
+
+    private const float launchMultiplicator = 60f;
+    private const float zMultiplicator = 1.5f;
 
     private void Start()
     {
@@ -13,9 +17,10 @@ public class DragGift : MonoBehaviour
     {
         if (followMouse)
         {
-            Vector3 newPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
-            newPos.z = 0f;
-            transform.position = newPos;
+            lastPos = transform.position;
+            Vector3 pos = Input.mousePosition;
+            pos.z = transform.position.z - Camera.main.transform.position.z;
+            transform.position = Camera.main.ScreenToWorldPoint(pos);
         }
     }
 
@@ -27,5 +32,8 @@ public class DragGift : MonoBehaviour
     private void OnMouseUp()
     {
         followMouse = false;
+        Vector3 mov = -(lastPos - transform.position) * launchMultiplicator;
+        mov.z = Mathf.Abs(mov.x + mov.y) * zMultiplicator;
+        gameObject.AddComponent<Rigidbody>().AddForce(mov, ForceMode.Impulse);
     }
 }
