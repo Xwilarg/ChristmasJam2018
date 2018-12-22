@@ -1,30 +1,14 @@
 fileFormatVersion: 2
-guid: 60f1e7c599d65e84f8455e894326befb
+guid: 85e7f00f0453f1244ae192e7576e8fd5
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube
-    100004: Sphere
-    100006: coal_003
     400000: //RootNode
-    400002: Cube
-    400004: Sphere
-    400006: coal_003
-    2100000: unnamed
-    2100002: Material
-    2300000: Cube
-    2300002: Sphere
-    2300004: coal_003
-    3300000: Cube
-    3300002: Sphere
-    3300004: coal_003
-    4300000: Cube
-    4300002: Sphere
-    4300004: coal_003
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: coal.003
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -78,7 +62,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -105,7 +89,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
