@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2136776234293545039}
   - component: {fileID: 3817966364248783084}
   - component: {fileID: 3361191076702236370}
-  - component: {fileID: 815386171}
   - component: {fileID: 815386170}
   - component: {fileID: 815386169}
+  - component: {fileID: 4277082058076360860}
   m_Layer: 0
   m_Name: dakimakura
   m_TagString: Untagged
@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815386168}
-  m_LocalRotation: {x: -0.7071068, y: -0.000000057601163, z: -0.000000057601163, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -5.85, y: 0, z: 14.83}
   m_LocalScale: {x: 44.907, y: 44.907, z: 44.907}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!33 &3817966364248783084
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -80,19 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &815386171
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815386168}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.04227751, y: 0.015807824, z: 0.005042895}
-  m_Center: {x: -5.4899994e-17, y: 0.00041723796, z: 0.0025214476}
 --- !u!114 &815386170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,3 +106,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obj: 15
+  Score: 0
+--- !u!64 &4277082058076360860
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815386168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: f548ab82b492d1c4ebd6ab3fc6a6e4cb, type: 3}

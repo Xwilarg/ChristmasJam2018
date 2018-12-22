@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2473624725916493637}
   - component: {fileID: 1047432128516991297}
   - component: {fileID: 2910574656797323388}
-  - component: {fileID: 1766760590}
   - component: {fileID: 1766760589}
   - component: {fileID: 1766760588}
+  - component: {fileID: 2102215386493140253}
   m_Layer: 0
   m_Name: lesMis
   m_TagString: Untagged
@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766760587}
-  m_LocalRotation: {x: -0.7071068, y: -0.000000057601163, z: -0.000000057601163, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -8.778, y: -8.926241e-17, z: 13.200022}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!33 &1047432128516991297
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -80,19 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1766760590
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766760587}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0046787495, y: 0.0006873155, z: 0.0074699614}
-  m_Center: {x: -7.253951e-17, y: 0, z: 0.0037349807}
 --- !u!114 &1766760589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,3 +106,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obj: 13
+  Score: 0
+--- !u!64 &2102215386493140253
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766760587}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 724d8f8664a48e54583366d2d1e4456c, type: 3}

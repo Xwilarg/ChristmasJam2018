@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1187846124786935634}
   - component: {fileID: 1625911509504774629}
   - component: {fileID: 4094512269036311560}
-  - component: {fileID: 521645028}
   - component: {fileID: 8297004692419104359}
   - component: {fileID: 6744197693351657518}
+  - component: {fileID: 578011545698214020}
   m_Layer: 0
   m_Name: bigCat
   m_TagString: Untagged
@@ -82,19 +82,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &521645028
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521645027}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.0035181318
-  m_Center: {x: -6.22211e-17, y: -0.00026831456, z: 0.0035963494}
 --- !u!114 &8297004692419104359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,3 +108,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obj: 6
+  Score: 0
+--- !u!64 &578011545698214020
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521645027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 38e7b69c304e86b40a653541309514bb, type: 3}
