@@ -10,7 +10,10 @@ public class Gift : MonoBehaviour
         {
             Text text = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
             GiftObject gift = GetComponent<GiftObject>();
-            text.text = "Score: " + (int.Parse(text.text.Split(' ').Last()) + (gift.Score * 100f)).ToString();
+            float mutliplicator = 1f;
+            if (gift.Obj == GiftObject.GObject.Coal)
+                mutliplicator *= -1f;
+            text.text = "Score: " + (int.Parse(text.text.Split(' ').Last()) + (gift.Score * 100f * mutliplicator)).ToString();
             Destroy(gameObject);
         }
     }
