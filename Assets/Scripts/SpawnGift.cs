@@ -4,9 +4,6 @@ using UnityEngine;
 public class SpawnGift : MonoBehaviour
 {
     [SerializeField]
-    private GameObject giftPrefab;
-
-    [SerializeField]
     private GameObject canvas;
 
     [SerializeField]
@@ -14,7 +11,12 @@ public class SpawnGift : MonoBehaviour
 
     private List<GameObject> spawned;
 
-    int currentScore;
+    private int currentScore;
+
+    public int GetScore()
+    {
+        return (currentScore);
+    }
 
     private void Start()
     {

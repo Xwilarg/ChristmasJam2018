@@ -23,4 +23,6 @@ public class GiftObject : MonoBehaviour
     }
 
     public GObject Obj;
+
+    public int Score;
 }

@@ -223,8 +223,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.022573035, y: 0.021248119, z: 0.016733335}
-  m_Center: {x: -0.0010130368, y: -0.00004564381, z: 0.054712567}
+  m_Size: {x: 0.0256689, y: 0.021248119, z: 0.0015812484}
+  m_Center: {x: 0.00053485873, y: -0.00004564486, z: 0.04713635}
 --- !u!1 &446446682 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7439412362298718941, guid: 17a328a78a237d043af6f330530f3777,
@@ -281,7 +281,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 989339149}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -777,8 +777,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 903481531}
   - {fileID: 461427283}
+  - {fileID: 903481531}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -799,8 +799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612baf5cb358ee94480431a7c1bf5c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  giftPrefab: {fileID: 3019051205964947605, guid: 64670ddcc99465d4187bf6009c2573fa,
-    type: 3}
   canvas: {fileID: 989339145}
   pannels:
   - {fileID: 6302840364020440925, guid: 179a5bd1cb9eed14d92d83dbeed8ac9f, type: 3}
