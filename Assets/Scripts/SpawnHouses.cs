@@ -22,9 +22,9 @@ public class SpawnHouses : MonoBehaviour
         else
             houses = usaHouses;
 
-        for (float y = 800f; y > 100f; y -= 120f)
+        for (float y = 800f; y > 100f; y -= 250f)
         {
-            for (float i = -800f; i < 800f; i += 120f)
+            for (float i = -900f; i < 800f; i += 200f)
             {
                 GameObject newGo = Instantiate(houses[Random.Range(0, houses.Length)], new Vector3(i, -100f, y), Quaternion.identity);
                 newGo.transform.rotation = Quaternion.Euler(new Vector3(-90f, 0f, 0f));
