@@ -35,5 +35,6 @@ public class DragGift : MonoBehaviour
         Vector3 mov = -(lastPos - transform.position) * launchMultiplicator;
         mov.z = Mathf.Abs(mov.x + mov.y) * zMultiplicator;
         gameObject.AddComponent<Rigidbody>().AddForce(mov, ForceMode.Impulse);
+        Destroy(this);
     }
 }
