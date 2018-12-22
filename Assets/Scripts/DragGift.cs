@@ -56,6 +56,7 @@ public class DragGift : MonoBehaviour
         rb.AddForce(mov, ForceMode.Impulse);
         if (state == FollowState.Throw)
         {
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<Respawner>().RespawnAll();
             Destroy(gameObject, 10f);
             Destroy(this);
         }
