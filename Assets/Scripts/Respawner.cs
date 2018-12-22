@@ -11,6 +11,20 @@ public class Respawner : MonoBehaviour
 
     private int craftRemaining;
 
+    [Header("Coal")]
+    [SerializeField]
+    private GameObject coalPrefab;
+
+    [SerializeField]
+    private Vector2 coalPos;
+
+    [Header("Empty Gift")]
+    [SerializeField]
+    private GameObject emptyGiftPrefab;
+
+    [SerializeField]
+    private Vector2 emptyGiftPos;
+
     [Header("To spawn")]
     [SerializeField]
     private GameObject[] allRespawnGo;
@@ -31,6 +45,18 @@ public class Respawner : MonoBehaviour
         craftRemaining = 4;
         craftText = craftButton.GetComponentInChildren<Text>();
         RespawnAll();
+        RespawnCoal();
+        RespawnGift();
+    }
+
+    public void RespawnCoal()
+    {
+        Instantiate(coalPrefab, coalPos, Quaternion.Euler(new Vector3(-90f, 180f, 0f)));
+    }
+
+    public void RespawnGift()
+    {
+        Instantiate(emptyGiftPrefab, emptyGiftPos, Quaternion.Euler(new Vector3(-90f, 180f, 0f)));
     }
 
     public void RespawnAll()

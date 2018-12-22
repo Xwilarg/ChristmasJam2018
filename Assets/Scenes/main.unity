@@ -843,9 +843,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   craftButton: {fileID: 1476466287}
+  coalPrefab: {fileID: 222842750864602517, guid: c131ce94c129a2948a0975a6f19264fd,
+    type: 3}
+  coalPos: {x: -7, y: 2}
+  emptyGiftPrefab: {fileID: 787383558155235107, guid: e17269de42377e948938d303ed004001,
+    type: 3}
+  emptyGiftPos: {x: -8, y: -5}
   allRespawnGo:
-  - {fileID: 787383558155235107, guid: e17269de42377e948938d303ed004001, type: 3}
-  - {fileID: 222842750864602517, guid: c131ce94c129a2948a0975a6f19264fd, type: 3}
+  - {fileID: 1766760587, guid: 152b012932a074e459ed8b17e545467d, type: 3}
+  - {fileID: 4187137651107336629, guid: e1b08677a8c9e1c42b4c3799d6a7bfa7, type: 3}
   - {fileID: 521645027, guid: d3875d80d29c9fc4b808b42c942aedad, type: 3}
   - {fileID: 930517577082547696, guid: 9382732a3202ab14d8f9e5edaa50d5e2, type: 3}
   - {fileID: 7296246381459177924, guid: 9866e11dae2c55a4986cf5a0622f8e5a, type: 3}
@@ -857,11 +863,9 @@ MonoBehaviour:
   - {fileID: 1907979125122732509, guid: 3329e846f18804a44b210d62943d1500, type: 3}
   - {fileID: 8166569284264416509, guid: a492961f8a624a849980e0f72a101345, type: 3}
   - {fileID: 815386168, guid: b956c6b645e612d49b2a0122ba4db252, type: 3}
-  - {fileID: 1766760587, guid: 152b012932a074e459ed8b17e545467d, type: 3}
-  - {fileID: 4187137651107336629, guid: e1b08677a8c9e1c42b4c3799d6a7bfa7, type: 3}
   allRespawnPos:
-  - {x: -8, y: -5}
-  - {x: -7, y: 2}
+  - {x: 5, y: 1.5}
+  - {x: 6, y: 1.5}
   - {x: -6, y: 1.5}
   - {x: -5, y: 1.5}
   - {x: -4, y: 1.5}
@@ -873,8 +877,6 @@ MonoBehaviour:
   - {x: 2, y: 1.5}
   - {x: 3, y: 1.5}
   - {x: 4, y: 1.5}
-  - {x: 5, y: 1.5}
-  - {x: 6, y: 1.5}
   turn90:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -889,8 +891,6 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 30, y: 0, z: 0}
   - {x: 90, y: 0, z: 90}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
 --- !u!1 &1124085974
 GameObject:
   m_ObjectHideFlags: 0

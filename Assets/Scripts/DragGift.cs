@@ -18,9 +18,15 @@ public class DragGift : MonoBehaviour
     private const float launchMultiplicator = 60f;
     private const float zMultiplicator = 1.5f;
 
+    private bool isCoal;
+
     private void Start()
     {
         followMouse = false;
+        isCoal = false;
+        GiftObject gift = GetComponent<GiftObject>();
+        if (gift != null)
+            isCoal = gift.Obj == GiftObject.GObject.Coal;
     }
 
     private void Update()
@@ -56,8 +62,14 @@ public class DragGift : MonoBehaviour
         rb.AddForce(mov, ForceMode.Impulse);
         if (state == FollowState.Throw)
         {
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<Respawner>().RespawnGift();
             Destroy(gameObject, 10f);
             Destroy(this);
+        }
+        if (isCoal)
+        {
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<Respawner>().RespawnCoal();
+            isCoal = false;
         }
     }
 }
