@@ -31,7 +31,7 @@ public class NaughtyList : MonoBehaviour
         naughtyKids = new List<FullName>();
         int nbKids = Random.Range(listSizeMin, listSizeMax);
         for (int i = 0; i < nbKids; i++)
-            naughtyKids.Add(new FullName(englishNames[Random.Range(0, englishNames.Length)], GenerateEuropeanLastName()));
+            naughtyKids.Add(GetFullName());
         naughtyList.text = string.Join(System.Environment.NewLine, naughtyKids.Select(x => x.FirstName.FirstName + " " + x.LastName));
     }
 

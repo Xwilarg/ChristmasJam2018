@@ -45,7 +45,9 @@ public class HistoryList : MonoBehaviour
         new Action("Bought WinRar", Rating.Good),
         new Action("Tried to summon the devil", Rating.VeryBad),
         new Action("Stole mother's underwear", Rating.Bad),
-        new Action("Helped a deaf blind homeless guy", Rating.VeryGood)
+        new Action("Helped a deaf blind homeless guy", Rating.VeryGood),
+        new Action("Made a very bad pun", Rating.Neutral),
+        new Action("Planted a tree", Rating.Good),
     };
 
     private void Start()

@@ -66,21 +66,17 @@ public class IdCard : MonoBehaviour
 
     public void Start()
     {
-        Name name;
-        string lastName;
+        FullName full;
         if (Random.Range(0, 10) == 0)
         {
             NaughtyList list = GameObject.FindGameObjectWithTag("NaughtyList").GetComponent<NaughtyList>();
-            FullName full = list.GetNaugthyKid();
-            name = full.FirstName;
-            lastName = full.LastName;
             GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>().IncreaseScore(-999);
+            full = list.GetNaugthyKid();
         }
         else
-        {
-            name = englishNames[Random.Range(0, englishNames.Length - 1)];
-            lastName = GenerateEuropeanLastName();
-        }
+            full = GetFullName();
+        Name name = full.FirstName;
+        string lastName = full.LastName;
         string movie = englishFilms[Random.Range(0, englishFilms.Length - 1)];
         string like = likes[Random.Range(0, likes.Length)];
         string dislike;

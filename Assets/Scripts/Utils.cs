@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static NaughtyList;
 
 public static class Utils
 {
@@ -77,6 +78,23 @@ public static class Utils
     public static string CapitalizeFirst(string str)
     {
         return (char.ToUpper(str[0]) + string.Join("", str.Skip(1)));
+    }
+
+    public static FullName GetFullName()
+    {
+        WorldSelection ws = null;
+        GameObject go = GameObject.FindGameObjectWithTag("WorldSelection");
+        if (go != null)
+            ws = go.GetComponent<WorldSelection>();
+        WorldSelection.Country country = WorldSelection.Country.USA;
+        if (ws != null)
+            country = ws.country;
+        if (country == WorldSelection.Country.France)
+            return (new FullName(frenchNames[Random.Range(0, frenchNames.Length - 1)], GenerateEuropeanLastName()));
+        else if (country == WorldSelection.Country.Japan)
+            return (new FullName(japaneseName[Random.Range(0, japaneseName.Length - 1)], GenerateJapaneseLastName()));
+        else
+            return (new FullName(englishNames[Random.Range(0, englishNames.Length - 1)], GenerateEuropeanLastName()));
     }
 
     public static readonly Name[] frenchNames = new Name[]
