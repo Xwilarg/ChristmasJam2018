@@ -15,6 +15,12 @@ ModelImporter:
     100018: segaCollider
     100020: Sphere_003
     100022: Cube_002
+    100024: Cube_003
+    100026: Cube_004
+    100028: cockroachCollider
+    100030: Cube_005
+    100032: Plane_001
+    100034: Cube_006
     400000: Cube
     400002: Cube_001
     400004: Cylinder
@@ -27,6 +33,12 @@ ModelImporter:
     400018: segaCollider
     400020: Sphere_003
     400022: Cube_002
+    400024: Cube_003
+    400026: Cube_004
+    400028: cockroachCollider
+    400030: Cube_005
+    400032: Plane_001
+    400034: Cube_006
     2100000: Hair
     2100002: skin
     2100004: eraser
@@ -45,6 +57,14 @@ ModelImporter:
     2100030: unnamed
     2100032: Plastic
     2100034: Screen
+    2100036: juice_box
+    2100038: Material_003
+    2100040: base
+    2100042: wing
+    2100044: Material_004
+    2100046: Material_005
+    2100048: Material_006
+    2100050: Material_007
     2300000: Cube
     2300002: Cube_001
     2300004: Cylinder
@@ -56,6 +76,12 @@ ModelImporter:
     2300016: segaCollider
     2300018: Sphere_003
     2300020: Cube_002
+    2300022: Cube_003
+    2300024: Cube_004
+    2300026: cockroachCollider
+    2300028: Cube_005
+    2300030: Plane_001
+    2300032: Cube_006
     3300000: Cube
     3300002: Cube_001
     3300004: Cylinder
@@ -67,6 +93,12 @@ ModelImporter:
     3300016: segaCollider
     3300018: Sphere_003
     3300020: Cube_002
+    3300022: Cube_003
+    3300024: Cube_004
+    3300026: cockroachCollider
+    3300028: Cube_005
+    3300030: Plane_001
+    3300032: Cube_006
     4300000: Sphere_001
     4300002: Cylinder
     4300004: Vert
@@ -78,6 +110,12 @@ ModelImporter:
     4300016: rubberDuckCollider
     4300018: littleSisterCollider
     4300020: Cube_002
+    4300022: Cube_003
+    4300024: Cube_004
+    4300026: Cube_005
+    4300028: cockroachCollider
+    4300030: Plane_001
+    4300032: Cube_006
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
