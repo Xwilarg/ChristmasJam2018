@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4965726474578506764}
   - component: {fileID: 1275148485621161417}
   - component: {fileID: 1275148485621161416}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plasticDuck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,3 +121,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obj: 2
+  Score: 0
+  Wishes: 

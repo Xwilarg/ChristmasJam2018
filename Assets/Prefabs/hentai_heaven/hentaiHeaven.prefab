@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5780854214380953640}
   - component: {fileID: 684373882501927534}
   - component: {fileID: 969254321037141069}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hentaiHeaven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,3 +121,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obj: 9
+  Score: 0
+  Wishes: 

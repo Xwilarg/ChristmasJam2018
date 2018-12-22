@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7315802685050202573}
   - component: {fileID: 8383439841419728980}
   - component: {fileID: 1271802371047117642}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: yellowVest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Obj: 14
   Score: 0
+  Wishes: 
 --- !u!114 &1271802371047117642
 MonoBehaviour:
   m_ObjectHideFlags: 0

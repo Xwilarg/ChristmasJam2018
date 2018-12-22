@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3241110467117409088}
   - component: {fileID: 2272258414152051170}
   - component: {fileID: 6579284619238725570}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: juiceBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Obj: 10
   Score: 0
+  Wishes: 
 --- !u!114 &2272258414152051170
 MonoBehaviour:
   m_ObjectHideFlags: 0

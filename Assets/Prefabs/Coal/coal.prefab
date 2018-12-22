@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7775872129690015204}
   - component: {fileID: 1915938252613962881}
   - component: {fileID: 7665190451958996937}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: coal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,3 +120,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obj: 0
+  Score: 0
+  Wishes: 

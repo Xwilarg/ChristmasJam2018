@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 815386170}
   - component: {fileID: 815386169}
   - component: {fileID: 4277082058076360860}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dakimakura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Obj: 15
   Score: 0
+  Wishes: 
 --- !u!64 &4277082058076360860
 MeshCollider:
   m_ObjectHideFlags: 0
