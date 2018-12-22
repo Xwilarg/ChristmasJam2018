@@ -36,6 +36,7 @@ public class DragGift : MonoBehaviour
         followMouse = false;
         Vector3 mov = -(lastPos - transform.position) * launchMultiplicator;
         mov.z = Mathf.Abs(mov.x + mov.y) * zMultiplicator;
+        mov /= 4;
         gameObject.AddComponent<Rigidbody>().AddForce(mov, ForceMode.Impulse);
         Destroy(gameObject, 10f);
         Destroy(this);
