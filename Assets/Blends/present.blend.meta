@@ -9,32 +9,38 @@ ModelImporter:
     100006: present
     100008: present_001
     100010: present_003
+    100012: emptyBoxCollider
     400000: Cube
     400002: Cube_001
     400004: //RootNode
     400006: present
     400008: present_001
     400010: present_003
+    400012: emptyBoxCollider
     2100000: Ribbon
     2100002: WrappingPaper
     2100004: cardboard
+    2100006: unnamed
     2300000: Cube
     2300002: Cube_001
     2300004: //RootNode
     2300006: present
     2300008: present_001
     2300010: present_003
+    2300012: emptyBoxCollider
     3300000: Cube
     3300002: Cube_001
     3300004: //RootNode
     3300006: present
     3300008: present_001
     3300010: present_003
+    3300012: emptyBoxCollider
     4300000: Cube_001
     4300002: Cube
     4300004: present
     4300006: present_003
     4300008: present_001
+    4300010: emptyBoxCollider
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
