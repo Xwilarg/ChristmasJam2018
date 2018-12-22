@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class IdCard : MonoBehaviour
@@ -119,6 +120,8 @@ public class IdCard : MonoBehaviour
     public void Start()
     {
         Name name = englishNames[Random.Range(0, englishNames.Length - 1)];
+        string lastName = Utils.GenerateEuropeanLastName();
+        lastName = char.ToUpper(Utils.GenerateEuropeanLastName()[0]) + string.Join("", lastName.Skip(1));
         string movie = englishFilms[Random.Range(0, englishFilms.Length - 1)];
         string like = likes[Random.Range(0, likes.Length)];
         string dislike;
@@ -126,7 +129,8 @@ public class IdCard : MonoBehaviour
         {
             dislike = likes[Random.Range(0, likes.Length)];
         } while (like == dislike);
-        idText.text = "<b>Name:</b> " + name.FirstName + System.Environment.NewLine
+        idText.text = "<b>First Name:</b> " + name.FirstName + System.Environment.NewLine
+            + "<b>Last Name:</b> " + lastName + System.Environment.NewLine
             + "<b>Sexe:</b> " + ((name.IsBoy) ? ("Boy") : ("Girl")) + System.Environment.NewLine
             + "<b>Age:</b> " + Random.Range(8, 15) + System.Environment.NewLine
             + "<b>Like:</b> " + like + System.Environment.NewLine
