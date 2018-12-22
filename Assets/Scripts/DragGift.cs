@@ -20,7 +20,9 @@ public class DragGift : MonoBehaviour
             lastPos = transform.position;
             Vector3 pos = Input.mousePosition;
             pos.z = transform.position.z - Camera.main.transform.position.z;
-            transform.position = Camera.main.ScreenToWorldPoint(pos);
+            Vector3 newPos = Camera.main.ScreenToWorldPoint(pos);
+            newPos.z = 0f;
+            transform.position = newPos;
         }
     }
 
@@ -35,6 +37,7 @@ public class DragGift : MonoBehaviour
         Vector3 mov = -(lastPos - transform.position) * launchMultiplicator;
         mov.z = Mathf.Abs(mov.x + mov.y) * zMultiplicator;
         gameObject.AddComponent<Rigidbody>().AddForce(mov, ForceMode.Impulse);
+        Destroy(gameObject, 10f);
         Destroy(this);
     }
 }
