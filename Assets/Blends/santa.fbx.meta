@@ -1,31 +1,16 @@
 fileFormatVersion: 2
-guid: b1f3a6f183f9ea34ebec68ea0e4df582
+guid: 18d9ae34d3f226342a59560e4111e5e7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Santa
-    100004: Vert
     400000: //RootNode
-    400002: Santa
-    400004: Vert
-    2100000: Material_001
-    2100002: Material
-    2100004: Material_002
-    2100006: Material_003
-    2100008: Metal
-    2100010: mapScreen
+    2100000: Material
+    2100002: Material.002
+    2100004: Material.003
     2300000: //RootNode
-    2300002: Santa
-    2300004: Vert
     3300000: //RootNode
-    3300002: Santa
-    3300004: Vert
-    4300000: Vert
-    4300002: Santa
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    4300000: Santa
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -79,7 +64,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -106,7 +91,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
