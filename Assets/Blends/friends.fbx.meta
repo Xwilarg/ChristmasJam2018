@@ -1,86 +1,18 @@
 fileFormatVersion: 2
-guid: 51d7246df6a45324ab6da5aa0b085413
+guid: b81a59a1efab3a745b18c53dec2903cb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cube
-    100002: Cube_001
-    100004: Cylinder
-    100006: //RootNode
-    100008: Sphere_001
-    100010: Vert
-    100012: Plane
-    100014: littleSisterCollider
-    100016: rubberDuckCollider
-    100018: segaCollider
-    100020: Sphere_003
-    100022: Cube_002
-    400000: Cube
-    400002: Cube_001
-    400004: Cylinder
-    400006: //RootNode
-    400008: Sphere_001
-    400010: Vert
-    400012: Plane
-    400014: littleSisterCollider
-    400016: rubberDuckCollider
-    400018: segaCollider
-    400020: Sphere_003
-    400022: Cube_002
+    100000: //RootNode
+    400000: //RootNode
     2100000: Hair
     2100002: skin
-    2100004: eraser
-    2100006: pencil
-    2100008: wood
-    2100010: Material
-    2100012: duck
-    2100014: beak
-    2100016: plastic
-    2100018: cartridge
-    2100020: Nose
-    2100022: Cat
-    2100024: Whisker
-    2100026: Material_002
-    2100028: Material_001
-    2100030: unnamed
-    2100032: Plastic
-    2100034: Screen
-    2300000: Cube
-    2300002: Cube_001
-    2300004: Cylinder
-    2300006: Sphere_001
-    2300008: Vert
-    2300010: Plane
-    2300012: littleSisterCollider
-    2300014: rubberDuckCollider
-    2300016: segaCollider
-    2300018: Sphere_003
-    2300020: Cube_002
-    3300000: Cube
-    3300002: Cube_001
-    3300004: Cylinder
-    3300006: Sphere_001
-    3300008: Vert
-    3300010: Plane
-    3300012: littleSisterCollider
-    3300014: rubberDuckCollider
-    3300016: segaCollider
-    3300018: Sphere_003
-    3300020: Cube_002
-    4300000: Sphere_001
-    4300002: Cylinder
-    4300004: Vert
-    4300006: Cube_001
-    4300008: Cube
-    4300010: Plane
-    4300012: Sphere_003
-    4300014: segaCollider
-    4300016: rubberDuckCollider
-    4300018: littleSisterCollider
-    4300020: Cube_002
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    2100004: Material.002
+    2100006: Material.001
+    2100008: eraser
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Sphere.003
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -134,7 +66,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -161,7 +93,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
