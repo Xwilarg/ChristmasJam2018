@@ -67,7 +67,7 @@ public class IdCard : MonoBehaviour
     public void Start()
     {
         FullName full;
-        if (Random.Range(0, 10) == 0)
+        if (Random.Range(0, 11) == 0)
         {
             NaughtyList list = GameObject.FindGameObjectWithTag("NaughtyList").GetComponent<NaughtyList>();
             GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>().IncreaseScore(-999);
@@ -77,7 +77,7 @@ public class IdCard : MonoBehaviour
             full = GetFullName();
         Name name = full.FirstName;
         string lastName = full.LastName;
-        string movie = englishFilms[Random.Range(0, englishFilms.Length - 1)];
+        string movie = englishFilms[Random.Range(0, englishFilms.Length)];
         string like = likes[Random.Range(0, likes.Length)];
         string dislike;
         do
@@ -87,7 +87,7 @@ public class IdCard : MonoBehaviour
         idText.text = "<b>First Name:</b> " + name.FirstName + System.Environment.NewLine
             + "<b>Last Name:</b> " + lastName + System.Environment.NewLine
             + "<b>Sexe:</b> " + ((name.IsBoy) ? ("Boy") : ("Girl")) + System.Environment.NewLine
-            + "<b>Age:</b> " + Random.Range(8, 15) + System.Environment.NewLine
+            + "<b>Age:</b> " + Random.Range(8, 16) + System.Environment.NewLine
             + "<b>Like:</b> " + like + System.Environment.NewLine
             + "<b>Dislike:</b> " + dislike + System.Environment.NewLine
             + "<b>Favorite Movie:</b> " + movie;

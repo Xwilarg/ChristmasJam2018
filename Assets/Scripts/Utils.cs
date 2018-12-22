@@ -11,7 +11,7 @@ public static class Utils
         int nbWishes = Random.Range(nbMin, nbMax);
         for (int i = 0; i < nbWishes;)
         {
-            int id = Random.Range(0, itemCount - 1);
+            int id = Random.Range(0, itemCount);
             if (!wishesId.Contains(id))
             {
                 wishesId.Add(id);
@@ -37,9 +37,9 @@ public static class Utils
         for (int i = 0; i < nameLength; i++)
         {
             if (vowel)
-                name += vowels[Random.Range(0, vowels.Length - 1)];
+                name += vowels[Random.Range(0, vowels.Length)];
             else
-                name += consonants[Random.Range(0, consonants.Length - 1)];
+                name += consonants[Random.Range(0, consonants.Length)];
             vowel = !vowel;
         }
         return (CapitalizeFirst(name));

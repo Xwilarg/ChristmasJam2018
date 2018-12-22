@@ -59,7 +59,7 @@ public class HistoryList : MonoBehaviour
         SpawnGift manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>();
         List<System.DateTime> dts = new List<System.DateTime>();
         for (int i = 0; i < wishesId.Count; i++)
-            dts.Add(new System.DateTime(2018, Random.Range(1, 12), Random.Range(1, 29)));
+            dts.Add(new System.DateTime(2018, Random.Range(1, 13), Random.Range(1, 30)));
         foreach (int i in wishesId)
         {
             manager.IncreaseScore((int)actions[i].Score);
