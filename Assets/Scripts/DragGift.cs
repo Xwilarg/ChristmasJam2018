@@ -2,6 +2,16 @@
 
 public class DragGift : MonoBehaviour
 {
+    [SerializeField]
+    private FollowState state;
+
+    private enum FollowState
+    {
+        OnlyFollow,
+        Drop,
+        Throw
+    }
+
     private bool followMouse;
     private Vector3 lastPos;
 
@@ -34,11 +44,20 @@ public class DragGift : MonoBehaviour
     private void OnMouseUp()
     {
         followMouse = false;
+        if (state == FollowState.OnlyFollow)
+            return;
         Vector3 mov = -(lastPos - transform.position) * launchMultiplicator;
-        mov.z = Mathf.Abs(mov.x + mov.y) * zMultiplicator;
+        if (state == FollowState.Throw)
+            mov.z = Mathf.Abs(mov.x + mov.y) * zMultiplicator;
         mov /= 2;
-        gameObject.AddComponent<Rigidbody>().AddForce(mov, ForceMode.Impulse);
-        Destroy(gameObject, 10f);
-        Destroy(this);
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb == null)
+            rb = gameObject.AddComponent<Rigidbody>();
+        rb.AddForce(mov, ForceMode.Impulse);
+        if (state == FollowState.Throw)
+        {
+            Destroy(gameObject, 10f);
+            Destroy(this);
+        }
     }
 }
