@@ -13,6 +13,7 @@ public class CreateGift : MonoBehaviour
             GameObject go = Instantiate(packedGift, new Vector3(transform.parent.position.x, transform.parent.position.y + 2f), Quaternion.identity);
             go.AddComponent<GiftObject>().Obj = gift.Obj;
             go.transform.rotation = Quaternion.Euler(new Vector3(90f, 0f, 0f));
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>().Spawn();
             Destroy(other.gameObject);
             Destroy(transform.parent.gameObject);
         }
