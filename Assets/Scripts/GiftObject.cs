@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class GiftObject : MonoBehaviour
 {
@@ -24,4 +25,7 @@ public class GiftObject : MonoBehaviour
 
     [HideInInspector]
     public int Score;
+
+    [HideInInspector]
+    public List<int> Wishes;
 }
