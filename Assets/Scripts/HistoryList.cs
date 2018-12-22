@@ -34,7 +34,7 @@ public class HistoryList : MonoBehaviour
     private readonly Action[] actions = new Action[]
     {
         new Action("Cheated on psychology exam", Rating.Bad),
-        new Action("Broke antic vase", Rating.Bad),
+        new Action("Broke an antic vase", Rating.Bad),
         new Action("Attended furry convention", Rating.Neutral),
         new Action("Still use Team Speak in 2018", Rating.Neutral),
         new Action("Drown a fish", Rating.Bad),
@@ -44,7 +44,7 @@ public class HistoryList : MonoBehaviour
         new Action("Masturbated in bed", Rating.Neutral),
         new Action("Bought WinRar", Rating.Good),
         new Action("Tried to summon the devil", Rating.VeryBad),
-        new Action("Stole mother's underwear", Rating.Bad),
+        new Action("Stole his mother's underwear", Rating.Bad),
         new Action("Helped a deaf blinded homeless guy", Rating.VeryGood)
     };
 
