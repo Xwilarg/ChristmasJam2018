@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -48,6 +49,7 @@ public class HistoryList : MonoBehaviour
         new Action("Helped a deaf blind homeless guy", Rating.VeryGood),
         new Action("Made a very bad pun", Rating.Neutral),
         new Action("Planted a tree", Rating.Good),
+        new Action("Drank a Pepsi", Rating.Bad),
     };
 
     private void Start()
@@ -55,10 +57,15 @@ public class HistoryList : MonoBehaviour
         List<int> wishesId = Utils.GetItems(actions.Length, listSizeMin, listSizeMax);
         string finalText = "";
         SpawnGift manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>();
+        List<System.DateTime> dts = new List<System.DateTime>();
+        for (int i = 0; i < wishesId.Count; i++)
+            dts.Add(new System.DateTime(2018, Random.Range(1, 12), Random.Range(1, 29)));
         foreach (int i in wishesId)
         {
             manager.IncreaseScore((int)actions[i].Score);
-            finalText += "dd/MM/yyyy: " + actions[i].Description + System.Environment.NewLine;
+            System.DateTime dt = dts.Min();
+            dts.Remove(dt);
+            finalText += dt.ToString("dd/MM") + ": " + actions[i].Description + System.Environment.NewLine;
         }
         actionList.text = finalText;
     }
