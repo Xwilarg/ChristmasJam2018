@@ -26,21 +26,21 @@ public class Schoolboard : MonoBehaviour
         new SchoolGrade("Definitly my best student", 19, 20),
         new SchoolGrade("Didn't come to any lesson", 0, 0),
         new SchoolGrade("Have cool shoes", 12, 16),
-        new SchoolGrade("I wish he could care as much for my lesson that he do for the girl next to him", 4, 8),
+        new SchoolGrade("I wish he could care as much for my lesson that he do for the other classmates", 4, 8),
         new SchoolGrade("I wish I was a butterfly", 8, 13),
         new SchoolGrade("Not bad kid", 12, 14),
         new SchoolGrade("lol k", 4, 8),
         new SchoolGrade("Be more sneaky if you try to cheat during exams", 4, 8),
-        new SchoolGrade("Have a terrible accent, I don't understand a thing at what he say", 5, 8),
+        new SchoolGrade("Have a terrible accent, I don't understand a thing at what you say", 5, 8),
         new SchoolGrade("See you next year", 2, 5)
     };
 
     private readonly string[] subjects = new string[]
         {
             "Maths",
-            "Litterature",
+            "Literature",
             "English",
-            "Phylosophy",
+            "Philosophy",
             "French",
             "History",
             "Geography",

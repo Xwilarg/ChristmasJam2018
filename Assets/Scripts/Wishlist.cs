@@ -24,7 +24,9 @@ public class Wishlist : MonoBehaviour
         "Apple juice",
         "A human size cockroach",
         "Meeting Leandre in real life",
-        "Les Misérables complete edition"
+        "Les Misérables complete edition",
+        "Yellow vest",
+        "Dakimakura"
     };
 
     private void Start()
