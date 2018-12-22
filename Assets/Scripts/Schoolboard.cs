@@ -31,7 +31,7 @@ public class Schoolboard : MonoBehaviour
         new SchoolGrade("Not bad kid", 12, 14),
         new SchoolGrade("lol k", 4, 8),
         new SchoolGrade("Be more sneaky if you try to cheat during exams", 4, 8),
-        new SchoolGrade("Have a terrible accent, I don't understand a thing at what you say", 5, 8),
+        new SchoolGrade("Have a terrible accent, I don't understand a thing you say", 5, 8),
         new SchoolGrade("See you next year", 2, 5)
     };
 
