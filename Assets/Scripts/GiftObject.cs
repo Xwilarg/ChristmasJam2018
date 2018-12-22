@@ -24,5 +24,6 @@ public class GiftObject : MonoBehaviour
 
     public GObject Obj;
 
+    [HideInInspector]
     public int Score;
 }

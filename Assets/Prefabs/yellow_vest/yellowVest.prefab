@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 8835653679541728251}
   - component: {fileID: 2888247947457811898}
   - component: {fileID: 3281042496410652261}
+  - component: {fileID: 7315802685050202573}
+  - component: {fileID: 8383439841419728980}
+  - component: {fileID: 1271802371047117642}
   m_Layer: 0
   m_Name: yellowVest
   m_TagString: Untagged
@@ -78,3 +81,44 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7315802685050202573
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187137651107336629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 37a86ab4ea04a76489b5ca686aad1dd0, type: 3}
+--- !u!114 &8383439841419728980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187137651107336629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c56159651a22db549bfae28d23771e66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Obj: 14
+  Score: 0
+--- !u!114 &1271802371047117642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187137651107336629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539043124da6e9740abf38173ac2d308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 1
