@@ -36,7 +36,7 @@ public class SpawnGift : MonoBehaviour
 
     public void Spawn()
     {
-        Instantiate(giftPrefab, Vector3.zero, Quaternion.identity);
+        Instantiate(giftPrefab, Vector3.zero, Quaternion.identity).GetComponent<Gift>().score = currentScore;
         foreach (GameObject go in spawned)
             Destroy(go);
         spawned.RemoveAll(x => true);

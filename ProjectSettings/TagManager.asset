@@ -8,6 +8,7 @@ TagManager:
   - NaughtyList
   - WorldSelection
   - Score
+  - Dest
   layers:
   - Default
   - TransparentFX
