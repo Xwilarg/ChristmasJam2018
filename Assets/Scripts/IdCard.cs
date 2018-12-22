@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using static NaughtyList;
 using static Utils;
 
 public class IdCard : MonoBehaviour
@@ -66,7 +67,21 @@ public class IdCard : MonoBehaviour
 
     public void Start()
     {
-        Name name = englishNames[Random.Range(0, englishNames.Length - 1)];
+        Name name;
+        string lastName;
+        if (Random.Range(0, 10) == 0)
+        {
+            NaughtyList list = GameObject.FindGameObjectWithTag("NaughtyList").GetComponent<NaughtyList>();
+            FullName full = list.GetNaugthyKid();
+            name = full.FirstName;
+            lastName = full.LastName;
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>().IncreaseScore(-999);
+        }
+        else
+        {
+            name = englishNames[Random.Range(0, englishNames.Length - 1)];
+            lastName = GenerateEuropeanLastName();
+        }
         string movie = englishFilms[Random.Range(0, englishFilms.Length - 1)];
         string like = likes[Random.Range(0, likes.Length)];
         string dislike;
@@ -75,7 +90,7 @@ public class IdCard : MonoBehaviour
             dislike = likes[Random.Range(0, likes.Length)];
         } while (like == dislike);
         idText.text = "<b>First Name:</b> " + name.FirstName + System.Environment.NewLine
-            + "<b>Last Name:</b> " + GenerateEuropeanLastName() + System.Environment.NewLine
+            + "<b>Last Name:</b> " + lastName + System.Environment.NewLine
             + "<b>Sexe:</b> " + ((name.IsBoy) ? ("Boy") : ("Girl")) + System.Environment.NewLine
             + "<b>Age:</b> " + Random.Range(8, 15) + System.Environment.NewLine
             + "<b>Like:</b> " + like + System.Environment.NewLine

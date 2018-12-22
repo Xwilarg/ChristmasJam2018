@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using static Utils;
@@ -11,14 +12,33 @@ public class NaughtyList : MonoBehaviour
     private const int listSizeMin = 3;
     private const int listSizeMax = 8;
 
-    private List<string> naughtyKids;
+    public struct FullName
+    {
+        public FullName(Name firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
+
+        public Name FirstName;
+        public string LastName;
+    }
+
+    private List<FullName> naughtyKids;
 
     private void Start()
     {
-        naughtyKids = new List<string>();
+        naughtyKids = new List<FullName>();
         int nbKids = Random.Range(listSizeMin, listSizeMax);
         for (int i = 0; i < nbKids; i++)
-            naughtyKids.Add(englishNames[Random.Range(0, englishNames.Length)].FirstName + " " + GenerateEuropeanLastName());
-        naughtyList.text = string.Join(System.Environment.NewLine, naughtyKids);
+            naughtyKids.Add(new FullName(englishNames[Random.Range(0, englishNames.Length)], GenerateEuropeanLastName()));
+        naughtyList.text = string.Join(System.Environment.NewLine, naughtyKids.Select(x => x.FirstName.FirstName + " " + x.LastName));
+    }
+
+    public FullName GetNaugthyKid()
+    {
+        FullName full = naughtyKids[Random.Range(0, naughtyKids.Count)];
+        naughtyKids.Remove(full);
+        return (full);
     }
 }

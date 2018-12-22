@@ -53,8 +53,16 @@ public class Schoolboard : MonoBehaviour
         
         string finalText = "";
         int y = 0;
+        SpawnGift manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>();
         foreach (int i in wishesId)
-            finalText += "<b>" + subjects[y++] + ":</b>" + System.Environment.NewLine + grades[i].Description + " ; " + (Random.Range(grades[i].ScoreMin, grades[i].ScoreMax)) + " / 20" + System.Environment.NewLine + System.Environment.NewLine;
+        {
+            int mark = Random.Range(grades[i].ScoreMin, grades[i].ScoreMax);
+            if (mark < 6)
+                manager.IncreaseScore(-1);
+            else if (mark > 14)
+                manager.IncreaseScore(1);
+            finalText += "<b>" + subjects[y++] + ":</b>" + System.Environment.NewLine + grades[i].Description + " ; " + mark + " / 20" + System.Environment.NewLine + System.Environment.NewLine;
+        }
         gradeList.text = finalText;
     }
 }

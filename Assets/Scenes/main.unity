@@ -295,6 +295,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NaughtyList
       objectReference: {fileID: 0}
+    - target: {fileID: 8956093024217458468, guid: e5f30945491b2ad43a35d1e563c452e9,
+        type: 3}
+      propertyPath: m_TagString
+      value: NaughtyList
+      objectReference: {fileID: 0}
     - target: {fileID: 8956093024217458469, guid: e5f30945491b2ad43a35d1e563c452e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -465,7 +470,7 @@ GameObject:
   - component: {fileID: 989339150}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

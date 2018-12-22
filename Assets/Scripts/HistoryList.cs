@@ -45,15 +45,19 @@ public class HistoryList : MonoBehaviour
         new Action("Bought WinRar", Rating.Good),
         new Action("Tried to summon the devil", Rating.VeryBad),
         new Action("Stole mother's underwear", Rating.Bad),
-        new Action("Helped a deaf blinded homeless guy", Rating.VeryGood)
+        new Action("Helped a deaf blind homeless guy", Rating.VeryGood)
     };
 
     private void Start()
     {
         List<int> wishesId = Utils.GetItems(actions.Length, listSizeMin, listSizeMax);
         string finalText = "";
+        SpawnGift manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>();
         foreach (int i in wishesId)
+        {
+            manager.IncreaseScore((int)actions[i].Score);
             finalText += "dd/MM/yyyy: " + actions[i].Description + System.Environment.NewLine;
+        }
         actionList.text = finalText;
     }
 }

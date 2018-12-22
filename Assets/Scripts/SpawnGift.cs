@@ -14,14 +14,22 @@ public class SpawnGift : MonoBehaviour
 
     private List<GameObject> spawned;
 
+    int currentScore;
+
     private void Start()
     {
         spawned = new List<GameObject>();
         SpawnAll();
     }
 
+    public void IncreaseScore(int score)
+    {
+        currentScore += score;
+    }
+
     private void SpawnAll()
     {
+        currentScore = 0;
         foreach (GameObject go in pannels)
             spawned.Add(Instantiate(go, canvas.transform));
     }
