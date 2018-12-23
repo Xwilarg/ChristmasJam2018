@@ -8,7 +8,7 @@ public class Wishlist : MonoBehaviour
     private Text wishList;
 
     private const int listSizeMin = 3;
-    private const int listSizeMax = 10;
+    private const int listSizeMax = 8;
 
     public List<int> wishesId { private set; get; }
 
