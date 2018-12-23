@@ -23,6 +23,9 @@ public class Timer : MonoBehaviour
         currTime -= Time.deltaTime;
         if (currTime < 0f)
         {
+            GameObject.FindGameObjectWithTag("ScoreKeep").GetComponent<ScoreKeep>().Score =
+                int.Parse(GameObject.FindGameObjectWithTag("Score").GetComponent<Text>().text.Split(' ').Last());
+            SceneManager.LoadScene("GameOver");
         }
         timerText.text = "Remaining time: " + (int)(currTime / 60) + ":" + FormatNb((int)(currTime % 60));
     }
