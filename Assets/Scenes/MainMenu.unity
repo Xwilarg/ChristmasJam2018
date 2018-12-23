@@ -2047,7 +2047,7 @@ MonoBehaviour:
     naughty list\".\u200B\r\n\nThe goal is to give coal to naughty child and presents
     to good ones.\r\nCheck the school marks to know if they were good or bad and pay
     attention to not give presents to children that are on the \"naughty list\" \r\nThen
-    once you packaged a coal or a present just throw it on the chimney"
+    once you packaged a coal or a present just throw it in the chimney"
 --- !u!222 &1596714385
 CanvasRenderer:
   m_ObjectHideFlags: 0
