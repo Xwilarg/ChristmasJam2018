@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56159651a22db549bfae28d23771e66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Obj: 13
+  Obj: 10
   Score: 0
   Wishes: 
 --- !u!64 &2102215386493140253
