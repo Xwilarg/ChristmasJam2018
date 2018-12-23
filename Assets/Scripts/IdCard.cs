@@ -77,7 +77,20 @@ public class IdCard : MonoBehaviour
             full = GetFullName();
         Name name = full.FirstName;
         string lastName = full.LastName;
-        string movie = englishFilms[Random.Range(0, englishFilms.Length)];
+        WorldSelection ws = null;
+        GameObject go = GameObject.FindGameObjectWithTag("WorldSelection");
+        if (go != null)
+            ws = go.GetComponent<WorldSelection>();
+        WorldSelection.Country country = WorldSelection.Country.USA;
+        if (ws != null)
+            country = ws.country;
+        string movie;
+        if (country == WorldSelection.Country.France)
+            movie = frenchFilms[Random.Range(0, frenchFilms.Length)];
+        else if (country == WorldSelection.Country.Japan)
+            movie = japaneseAnimes[Random.Range(0, japaneseAnimes.Length)];
+        else
+            movie = englishFilms[Random.Range(0, englishFilms.Length)];
         string like = likes[Random.Range(0, likes.Length)];
         string dislike;
         do
