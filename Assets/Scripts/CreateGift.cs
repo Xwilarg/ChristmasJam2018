@@ -11,7 +11,7 @@ public class CreateGift : MonoBehaviour
         GiftObject gift = other.GetComponent<GiftObject>();
         if (gift != null)
         {
-            GameObject.FindGameObjectWithTag("NextButton").GetComponent<Button>().interactable = true;
+            //GameObject.FindGameObjectWithTag("NextButton").GetComponent<Button>().interactable = true;
             GameObject go = Instantiate(packedGift, new Vector3(transform.parent.position.x, transform.parent.position.y + 2f), Quaternion.identity);
             GiftObject giftObj = go.AddComponent<GiftObject>();
             giftObj.Obj = gift.Obj;

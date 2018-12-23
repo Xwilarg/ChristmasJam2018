@@ -52,7 +52,6 @@ public class IdCard : MonoBehaviour
 
     private string[] likes = new string[]
     {
-        "His dad",
         "C++",
         "Feet",
         "Macron",
@@ -61,7 +60,10 @@ public class IdCard : MonoBehaviour
         "Santa Claus",
         "Baguette",
         "Yahoo mail",
-        "Darkness"
+        "Darkness",
+        "Wormhole",
+        "Campers",
+        "Ubuntu"
     };
 
     public void Start()

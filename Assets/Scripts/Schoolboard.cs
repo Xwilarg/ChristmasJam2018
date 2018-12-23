@@ -26,43 +26,40 @@ public class Schoolboard : MonoBehaviour
         new SchoolGrade("Definitly my best student", 19, 20),
         new SchoolGrade("Didn't come to any lesson", 0, 0),
         new SchoolGrade("Have cool shoes", 12, 16),
-        new SchoolGrade("I wish he could care as much for my lesson that he do for the other classmates", 4, 8),
         new SchoolGrade("I wish I was a butterfly", 8, 13),
-        new SchoolGrade("Not bad kid", 12, 14),
         new SchoolGrade("lol k", 4, 8),
-        new SchoolGrade("Be more sneaky if you try to cheat during exams", 4, 8),
-        new SchoolGrade("Have a terrible accent, I don't understand a thing you say", 5, 8),
-        new SchoolGrade("See you next year", 2, 5)
+        new SchoolGrade("See you next year", 2, 5),
+        new SchoolGrade("Could have done better", 17, 19),
+        new SchoolGrade("Good trimester", 15, 18),
+        new SchoolGrade("You could have better marks if you were trying", 10, 13),
     };
 
     private readonly string[] subjects = new string[]
-        {
+    {
             "Maths",
             "Literature",
-            "English",
             "Philosophy",
-            "French",
             "History",
             "Geography",
-            "Science"
-        };
+            "Chemistry",
+            "Physics"
+    };
 
     private void Start()
     {
         List<int> wishesId = Utils.GetItems(grades.Length, subjects.Length, subjects.Length);
-        
+
         string finalText = "";
         int y = 0;
         SpawnGift manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>();
+        int sum = 0;
         foreach (int i in wishesId)
         {
             int mark = Random.Range(grades[i].ScoreMin, grades[i].ScoreMax);
-            if (mark < 6)
-                manager.IncreaseScore(-1);
-            else if (mark > 14)
-                manager.IncreaseScore(1);
+            sum += mark;
             finalText += "<b>" + subjects[y++] + ":</b>" + System.Environment.NewLine + grades[i].Description + " ; " + mark + " / 20" + System.Environment.NewLine + System.Environment.NewLine;
         }
+        manager.IncreaseScore(sum / wishesId.Count);
         gradeList.text = finalText;
     }
 }
