@@ -42,7 +42,7 @@ public class Respawner : MonoBehaviour
         Debug.Assert(allRespawnGo.Length == allRespawnPos.Length);
         Debug.Assert(allRespawnGo.Length == turn90.Length);
         allGos = new List<GameObject>();
-        craftRemaining = 4;
+        craftRemaining = 3;
         craftText = craftButton.GetComponentInChildren<Text>();
         RespawnAll();
         RespawnCoal();
