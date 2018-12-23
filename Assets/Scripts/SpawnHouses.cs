@@ -33,7 +33,7 @@ public class SpawnHouses : MonoBehaviour
         else
             houses = usaHouses;
 
-        for (float y = 30000f; y > 100f; y -= 250f)
+        for (float y = 800f; y > 100f; y -= 250f)
         {
             for (float i = -900f; i < 800f; i += 200f)
             {
