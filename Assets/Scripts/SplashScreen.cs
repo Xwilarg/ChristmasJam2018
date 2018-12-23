@@ -15,7 +15,7 @@ public class SplashScreen : MonoBehaviour
     private void Update()
     {
         timer -= Time.deltaTime;
-        if (timer < 0f || Input.anyKeyDown)
+        if (timer < 0f || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Escape))
             SceneManager.LoadScene("MainMenu");
     }
 }
