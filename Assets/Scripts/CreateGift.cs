@@ -17,7 +17,7 @@ public class CreateGift : MonoBehaviour
             SpawnGift spawnGift = GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>();
             giftObj.Score = spawnGift.GetScore();
             go.transform.rotation = Quaternion.Euler(new Vector3(90f, 0f, 0f));
-            spawnGift.Spawn();
+            spawnGift.Spawn(); // TODO: Not call here ?
             Destroy(other.gameObject);
             Destroy(transform.parent.gameObject);
         }
