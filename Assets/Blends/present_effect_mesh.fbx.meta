@@ -1,54 +1,47 @@
 fileFormatVersion: 2
-guid: f6cb39c40ac57fb45b57c2edab39b5ef
+guid: ba174444c23048143aa524122acb7d89
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cube
-    100002: Cube_001
-    100004: //RootNode
-    100006: present
-    100008: present_001
-    100010: present_003
-    100012: emptyBoxCollider
-    100014: lightEffect
-    400000: Cube
-    400002: Cube_001
-    400004: //RootNode
-    400006: present
-    400008: present_001
-    400010: present_003
-    400012: emptyBoxCollider
-    400014: lightEffect
-    2100000: Ribbon
-    2100002: WrappingPaper
-    2100004: cardboard
-    2100006: unnamed
-    2300000: Cube
-    2300002: Cube_001
-    2300004: //RootNode
-    2300006: present
-    2300008: present_001
-    2300010: present_003
-    2300012: emptyBoxCollider
-    2300014: lightEffect
-    3300000: Cube
-    3300002: Cube_001
-    3300004: //RootNode
-    3300006: present
-    3300008: present_001
-    3300010: present_003
-    3300012: emptyBoxCollider
-    3300014: lightEffect
-    4300000: Cube_001
-    4300002: Cube
-    4300004: present
-    4300006: present_003
-    4300008: present_001
-    4300010: emptyBoxCollider
-    4300012: lightEffect
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    100000: emptyBoxCollider
+    100002: Hemi
+    100004: lightEffect
+    100006: Point
+    100008: present
+    100010: present.001
+    100012: present.003
+    100014: //RootNode
+    400000: emptyBoxCollider
+    400002: Hemi
+    400004: lightEffect
+    400006: Point
+    400008: present
+    400010: present.001
+    400012: present.003
+    400014: //RootNode
+    2100000: No Name
+    2100002: Ribbon
+    2100004: WrappingPaper
+    2100006: cardboard
+    2300000: emptyBoxCollider
+    2300002: lightEffect
+    2300004: present
+    2300006: present.001
+    2300008: present.003
+    2300010: //RootNode
+    3300000: emptyBoxCollider
+    3300002: lightEffect
+    3300004: present
+    3300006: present.001
+    3300008: present.003
+    3300010: //RootNode
+    4300000: lightEffect
+    4300002: emptyBoxCollider
+    4300004: present.003
+    4300006: present.001
+    4300008: present
+    10800000: Hemi
+    10800002: Point
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -102,7 +95,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -129,7 +122,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
