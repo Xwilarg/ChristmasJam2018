@@ -74,7 +74,7 @@ public class IdCard : MonoBehaviour
     public void ResetContent()
     {
         FullName full;
-        if (Random.Range(0, 10) == 0)
+        if (Random.Range(0, 6) == 0)
         {
             NaughtyList list = GameObject.FindGameObjectWithTag("NaughtyList").GetComponent<NaughtyList>();
             GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>().IncreaseScore(-999);
