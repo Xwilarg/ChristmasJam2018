@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    private const float maxTimer = 5f * 60f;
+    private const float maxTimer = 3f * 60f;
     private float currTime;
 
     public int finalScore { private set; get; }
