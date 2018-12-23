@@ -99,7 +99,7 @@ public class IdCard : MonoBehaviour
         } while (like == dislike);
         idText.text = "<b>First Name:</b> " + name.FirstName + System.Environment.NewLine
             + "<b>Last Name:</b> " + lastName + System.Environment.NewLine
-            + "<b>Sexe:</b> " + ((name.IsBoy) ? ("Boy") : ("Girl")) + System.Environment.NewLine
+            + "<b>Gender:</b> " + ((name.IsBoy) ? ("Boy") : ("Girl")) + System.Environment.NewLine
             + "<b>Age:</b> " + Random.Range(8, 16) + System.Environment.NewLine
             + "<b>Like:</b> " + like + System.Environment.NewLine
             + "<b>Dislike:</b> " + dislike + System.Environment.NewLine
