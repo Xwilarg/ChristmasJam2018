@@ -17,8 +17,8 @@ public class Gift : MonoBehaviour
             if (gift.Obj == GiftObject.GObject.Coal)
                 mutliplicator *= -1f;
             float score;
-            if (gift.Obj != GiftObject.GObject.Coal && gift.Wishes.Contains((int)gift.Obj))
-                score = Mathf.Clamp(gift.Score * 100f * mutliplicator, -100f, 100f);
+            if (gift.Obj == GiftObject.GObject.Coal || gift.Wishes.Contains((int)gift.Obj))
+                score = Mathf.Clamp(gift.Score * 10f * mutliplicator, -100f, 100f);
             else
                 score = -100f;
             text.text = "Score: " + (int.Parse(text.text.Split(' ').Last()) + (score)).ToString();
