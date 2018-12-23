@@ -18,11 +18,11 @@ public class Gift : MonoBehaviour
             if (gift.Obj == GiftObject.GObject.Coal || gift.Wishes.Contains((int)gift.Obj))
                 score = gift.Score * 10f * mutliplicator;
             else
-                score = -100f;
-            if (score > 100f)
-                score = 100f;
-            if (score < -100f)
-                score = -100f;
+                score = -20f;
+            if (score > 30f)
+                score = 30f;
+            if (score < -30f)
+                score = -30f;
             if (score < 0f)
                 score *= 3f;
             text.text = "Score: " + (int.Parse(text.text.Split(' ').Last()) + Mathf.Round(score)).ToString();
