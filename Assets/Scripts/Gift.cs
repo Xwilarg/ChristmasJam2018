@@ -21,7 +21,7 @@ public class Gift : MonoBehaviour
                 score = Mathf.Clamp(gift.Score * 10f * mutliplicator, -100f, 100f);
             else
                 score = -100f;
-            text.text = "Score: " + (int.Parse(text.text.Split(' ').Last()) + (score)).ToString();
+            text.text = "Score: " + (int.Parse(text.text.Split(' ').Last()) + Mathf.Round(score)).ToString();
             Destroy(gameObject);
         }
     }

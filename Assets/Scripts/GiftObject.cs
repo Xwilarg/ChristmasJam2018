@@ -24,7 +24,7 @@ public class GiftObject : MonoBehaviour
     public GObject Obj;
 
     [HideInInspector]
-    public int Score;
+    public float Score;
 
     [HideInInspector]
     public List<int> Wishes;

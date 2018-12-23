@@ -59,7 +59,7 @@ public class Schoolboard : MonoBehaviour
             sum += mark;
             finalText += "<b>" + subjects[y++] + ":</b>" + System.Environment.NewLine + grades[i].Description + " ; " + mark + " / 20" + System.Environment.NewLine + System.Environment.NewLine;
         }
-        manager.IncreaseScore(sum / wishesId.Count);
+        manager.IncreaseScore(((float)sum / wishesId.Count) - 10f);
         gradeList.text = finalText;
     }
 }
