@@ -8,6 +8,9 @@ public class Gift : MonoBehaviour
     {
         if (other.CompareTag("Dest"))
         {
+
+            SpawnGift spawnGift = GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>();
+            spawnGift.Spawn();
             Text text = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
             GiftObject gift = GetComponent<GiftObject>();
             float mutliplicator = 1;

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class CreateGift : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class CreateGift : MonoBehaviour
         GiftObject gift = other.GetComponent<GiftObject>();
         if (gift != null)
         {
+            GameObject.FindGameObjectWithTag("NextButton").GetComponent<Button>().interactable = true;
             GameObject go = Instantiate(packedGift, new Vector3(transform.parent.position.x, transform.parent.position.y + 2f), Quaternion.identity);
             GiftObject giftObj = go.AddComponent<GiftObject>();
             giftObj.Obj = gift.Obj;
@@ -17,7 +19,6 @@ public class CreateGift : MonoBehaviour
             SpawnGift spawnGift = GameObject.FindGameObjectWithTag("GameManager").GetComponent<SpawnGift>();
             giftObj.Score = spawnGift.GetScore();
             go.transform.rotation = Quaternion.Euler(new Vector3(90f, 0f, 0f));
-            spawnGift.Spawn(); // TODO: Not call here ?
             Destroy(other.gameObject);
             Destroy(transform.parent.gameObject);
         }

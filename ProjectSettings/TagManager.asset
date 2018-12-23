@@ -10,6 +10,7 @@ TagManager:
   - Score
   - Dest
   - WishList
+  - NextButton
   layers:
   - Default
   - TransparentFX
