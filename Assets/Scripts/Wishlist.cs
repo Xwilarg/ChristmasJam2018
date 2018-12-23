@@ -31,6 +31,11 @@ public class Wishlist : MonoBehaviour
 
     private void Start()
     {
+        ResetContent();
+    }
+
+    public void ResetContent()
+    {
         wishesId = Utils.GetItems(wishes.Length, listSizeMin, listSizeMax);
         string finalText = "";
         int y = 1;

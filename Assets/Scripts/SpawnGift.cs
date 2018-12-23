@@ -7,7 +7,13 @@ public class SpawnGift : MonoBehaviour
     private GameObject canvas;
 
     [SerializeField]
-    private GameObject[] pannels;
+    private Schoolboard pannel1;
+
+    [SerializeField]
+    private IdCard pannel2;
+
+    [SerializeField]
+    private Wishlist pannel3;
 
     private List<GameObject> spawned;
 
@@ -21,7 +27,7 @@ public class SpawnGift : MonoBehaviour
     private void Start()
     {
         spawned = new List<GameObject>();
-        SpawnAll();
+        currentScore = 0f;
     }
 
     public void IncreaseScore(float score)
@@ -29,18 +35,11 @@ public class SpawnGift : MonoBehaviour
         currentScore += score;
     }
 
-    private void SpawnAll()
-    {
-        currentScore = 0f;
-        foreach (GameObject go in pannels)
-            spawned.Add(Instantiate(go, canvas.transform));
-    }
-
     public void Spawn()
     {
-        foreach (GameObject go in spawned)
-            Destroy(go);
-        spawned.RemoveAll(x => true);
-        SpawnAll();
+        currentScore = 0f;
+        pannel1.ResetContent();
+        pannel2.ResetContent();
+        pannel3.ResetContent();
     }
 }

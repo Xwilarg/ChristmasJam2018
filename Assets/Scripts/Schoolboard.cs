@@ -47,6 +47,11 @@ public class Schoolboard : MonoBehaviour
 
     private void Start()
     {
+        ResetContent();
+    }
+
+    public void ResetContent()
+    {
         List<int> wishesId = Utils.GetItems(grades.Length, subjects.Length, subjects.Length);
 
         string finalText = "";

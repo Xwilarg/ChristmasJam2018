@@ -68,6 +68,11 @@ public class IdCard : MonoBehaviour
 
     public void Start()
     {
+        ResetContent();
+    }
+
+    public void ResetContent()
+    {
         FullName full;
         if (Random.Range(0, 11) == 0)
         {
