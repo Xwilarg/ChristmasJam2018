@@ -9,8 +9,8 @@ public class NaughtyList : MonoBehaviour
     [SerializeField]
     private Text naughtyList;
 
-    private const int listSizeMin = 3;
-    private const int listSizeMax = 8;
+    private const int listSizeMin = 10;
+    private const int listSizeMax = 10;
 
     public struct FullName
     {

@@ -32,6 +32,7 @@ public class Schoolboard : MonoBehaviour
         new SchoolGrade("Could have done better", 17, 19),
         new SchoolGrade("Good trimester", 15, 18),
         new SchoolGrade("You could have better marks if you were trying", 10, 13),
+        new SchoolGrade("Need to do more efforts", 4, 8),
     };
 
     private readonly string[] subjects = new string[]
